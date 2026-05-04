@@ -1,0 +1,33 @@
+---
+---
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #ffffff;
+  color: #111;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+main {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+a:hover {
+  opacity: 0.4;
+}
