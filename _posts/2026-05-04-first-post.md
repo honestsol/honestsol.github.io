@@ -4,4 +4,4 @@ date: 2026-05-04
 categories: [journal]
 ---
 
-내용...
+![설명](/assets/images/IMG_9704.jpeg)
