@@ -4,4 +4,5 @@ date: 2026-05-04
 categories: [journal]
 ---
 
-![설명](/assets/images/IMG_9704.jpeg)
+![tattoo](/assets/images/IMG_9704.jpg)
+*first session*
