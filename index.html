@@ -1,33 +1,21 @@
----
----
+<main>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <span style="opacity:0.4; margin-right:10px;">
+          {{ post.date | date: "%Y.%m.%d" }}
+        </span>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-  <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
 
-  <main>
-    <ul>
-      {% for post in site.posts %}
-        <li>
-          <li>
-  <span style="margin-right:10px; opacity:0.4;">
-    {{ post.date | date: "%Y.%m.%d" }}
-  </span>
-  <a href="{{ post.url }}">
-    {{ post.title }}
-  </a>
-</li>
-            {{ post.title }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </main>
-
-</body>
-</html>
+        {% if post.categories %}
+          <span style="margin-left:8px; opacity:0.3;">
+            [{% for cat in post.categories %}{{ cat }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
+          </span>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</main>
